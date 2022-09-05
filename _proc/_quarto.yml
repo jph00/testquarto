@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: _docs
+  preview:
+    port: 3000
+    browser: false
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 4
+
+website:
+  title: "testquarto"
+  site-url: "https://jph00.github.io/testquarto"
+  description: "Experimenting with quarto"
+  twitter-card: true
+  open-graph: true
+  repo-branch: master
+  repo-url: "https://github.com/jph00/testquarto"
+  repo-actions: [issue]
+  navbar:
+    background: primary
+    search: true
+    right:
+      - icon: github
+        href: "https://github.com/jph00/testquarto"
+  sidebar:
+    style: "floating"
+
+metadata-files: 
+  - sidebar.yml
+  - custom.yml
